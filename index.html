@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacional Estoque</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+        
+        <form id="dataForm">
+            <center>
+                <p>
+                    <br>DATA:<br><input type="text" id="currentDateTime" name="DATA" readonly>
+                </p>
+            </center>
+            <center><strong>ESTOQUE - REPOSIÇÃO</strong></center>
+
+            <p><strong>Nome:</strong></p>
+            <!--Nome-->
+            <select name="NOME_USUARIO" id="" required>
+                <option> - </option>
+                <option> AUGUSTOTI </option>
+                <option> ALANPRC </option>
+                <option> ANDREC </option>
+                <option> CARLOSPRC </option>
+                <option> CLEITONGF </option>
+                <option> CELSOPRC </option>
+                <option> CLAUDINEIPRC </option>
+                <option> DARLANMS </option>
+                <option> EDUARDOPRC </option>
+                <option> ELIANAPRC </option>
+                <option> EMERSONS01 </option>
+                <option> GABRIELCOE </option>
+                <option> JOAOCWB </option>
+                <option> JOAOPRC </option>
+                <option> JULIANOCWB </option>
+                <option> LUCASPRC </option>
+                <option> LUIZPR_CE </option>
+                <option> MATHEUSGO </option>
+                <option> MATHEUSSV </option>
+                <option> PALMIRACOE </option>
+                <option> RAPHAELPRC </option>
+                <option> RENEPRC-COE </option>
+                <option> RICARDOPRC </option>
+                <option> RODRIGOVE </option>
+                <option> SULIVANSM </option>
+                <option> TALLESPRC </option>
+                <option> WESLEYPRC </option>
+                <option> WILSONJB </option>
+            </select>
+
+            <!--Setor-->
+            <p><strong>SETOR:</strong></p>
+            <select name="SETOR" required>
+                <option>-</option>
+                <option>MESA 01</option>
+                <option>MESA 02</option>
+                <option>MESA 03</option>
+                <option>MESA 04</option>
+                <option>MESA 05</option>
+                <option>MESA 06</option>
+                <option>B/C</option>
+                <option>D/E</option>
+                <option>E/F FUNDO</option>
+                <option>G/H</option>
+                <option>I/J</option>
+                <option>CORAL</option>
+
+            </select>
+
+            <!--Produto-->
+            <p><strong>PRODUTO:</strong></p>
+            <select name="PRODUTO" required>
+                <option>-</option>
+                <option>ETIQUETAS</option>
+                <option>RIBBON</option>
+                <option>FITA LOGO</option>
+                <option>FITA TRANSPARENTE</option>
+                <option>FITA BRANCA</option>
+                <option>FITA AZUL</option>
+                <option>FITA AMARELA</option>
+                <option>FITA LARANJA</option>
+                <option>BOBINA</option>
+                <option>BOBINA PICOTADA</option>
+                <option>CAIXAS NOVAS</option>
+                <option>CAIXAS USADAS</option>
+            </select>
+
+            <p><strong>QUANTIDADE:</strong></p>
+            <input type="text" name="QUANTIDADE" required>
+
+            <hr>
+            <br>
+            <button type="submit" id="saveButton">Salvar arquivo</button>
+        </form>
+        <script src="./script.js"></script>
+</body>
+</html>
