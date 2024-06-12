@@ -15,8 +15,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('currentDateTime').value = getCurrentDateTime();
 });
 
-
 let firstClick = true;
+
+
+function reloadPageAfterDelay(){
+    setTimeout(() => {
+        location.reload();
+    }, 5000); // Espera 5 segundos antes de recarregar 
+}
 
 
 // Adiciona um evento de clique ao botão
@@ -24,6 +30,7 @@ document.getElementById('saveButton').addEventListener('click', function(event) 
     if (firstClick) {
         alert('Finalizado.');
         firstClick = false;
+        reloadPageAfterDelay();
     } else {
         document.getElementById('dataForm').submit();
     }
@@ -43,12 +50,7 @@ document.getElementById('dataForm').addEventListener('submit', function(event) {
     formData.forEach((value, key) => {
         data[key] = value;
     });
-
-
-    document.querySelector('button[type="submit"]').addEventListener('click', function() {
-        alert('Sua resposta foi registrada :)');
-    });
-
+    
     // Envia os dados para a API do Sheet Monkey
     fetch('https://api.sheetmonkey.io/form/SnX1tD3LbDxZ5MboHwz8R', {
         method: 'POST',
