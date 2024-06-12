@@ -21,7 +21,7 @@ let firstClick = true;
 function reloadPageAfterDelay(){
     setTimeout(() => {
         location.reload();
-    }, 1000); // Espera 5 segundos antes de recarregar 
+    }, 3000); // Espera 5 segundos antes de recarregar 
 }
 
 
